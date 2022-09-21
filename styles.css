@@ -17,8 +17,13 @@ a {
 
 body {
     background-image: linear-gradient( to bottom right, rgba(79,51,176,1.0),rgba(210,53,165));
-}
 
+}
+.heading {
+    text-align: center;
+    font-family: helvetica;
+    font-size: 20px;;
+}
 .container {
     height: 100vh;
     width: 100vw;
@@ -101,7 +106,7 @@ button#equal {
     height: 130px;
 }
 
-/* light theme */
+/* ----------------------------------------------light theme------------------------------------------------------- */
 
 .calculator {
     background-color: #fff;
@@ -131,7 +136,7 @@ button#equal {
     color: #000;
   }
 
-  /* dark theme */
+  /* --------------------------------------dark theme------------------------------------------------------------ */
 
   .calculator.dark {
     background-color: #071115;
@@ -160,4 +165,12 @@ button#equal {
     background-color: #223323;
     color: #ffffff;
   }
-  
+  /* -------------------------------------responsiveness of sites-------------------------------------- */
+  @media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .calculator.dark{
+        width: auto;
+    }
+  }
